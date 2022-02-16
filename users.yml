@@ -1,6 +1,11 @@
 myusers:
-   - name: ravi
-     uid: 1010
-     first: ravi
-     last: sharma
-     middle: exam
+- name: james
+  uid: 1010
+  first: James
+  last: Andersion 
+  middle: exam
+- name: harry
+  uid: 1020
+  first: Harry
+  last: Jackson
+  middle: exam
