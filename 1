@@ -7,7 +7,7 @@
   tasks:
   - name: Add User via user module
     vars:
-      password: "{{ lookup('password', '' '/home/sysops/{{ item.name }}-password.txt' ' length=8') }}"
+      password: "{{ lookup('password', '' '/home/sysops/{{ item.name }}-password.txt' ' length=8')"
     user:
       name: "{{ item.name }}"
       uid:  "{{ item.uid }}"
@@ -16,4 +16,4 @@
       password: "{{ password|password_hash('sha512') }}"
       update_password: on_create
       state: present
-    with_items: "{{ myusers }}" 
+    with_items: "{{ }}" 
